@@ -15,7 +15,7 @@ static void clock_setup(void)
 
 static void usart_setup(void)
 {
-	/* Setup GPIO6 (in GPIO port A) to 'output push-pull' for LED use. */
+	
 	gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO13);
 	gpio_set_output_options(GPIOC, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, GPIO13);
 
